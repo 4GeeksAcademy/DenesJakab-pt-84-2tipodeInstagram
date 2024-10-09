@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="barra-superior d-flex">
+        <i class="fa-brands fa-instagram icono-instagram ps-2"></i>
+        <h1 class="Instagram me-auto ps-3">Instagram</h1>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a new post
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">create a new post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Caption:
+                        <div> <textarea placeholder="Add the caption of your post here" style="width: 100%;"></textarea>
+                        </div>
+                        <div><i class="fa-solid fa-location-dot mx-2"></i><i class="fa-solid fa-camera"></i></div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Publish</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle ajustes" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Policy and Data</a></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--aqui estan los botones para cambiar de vista-->
+    <div class="d-flex justify-content-center pt-4">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                        class="fa-regular fa-image"></i></button>
+
+            </li> <iclass="fa-solid fa-table-cells"></i>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false"><i class="fa-solid fa-table-cells"></i></button>
+                </li>
+        </ul>
+    </div>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0"><!--contenido de la primera pesataña-->
+
+            <div class="publicaciones mx-auto mt-5"><!--aqui iran las publiaciones-->
+
+                <div class="post"><!--Primera publicación-->
+                    <div class="post-header">
+                        <div class="post-title">Nature</div>
+                        <div class="post-date">01/01</div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1534971654695-b03dc21e03e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Forest">
+                    </div>
+                    <div class="post-description">
+                        Hikking #nature#tree#forest
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-title">Siempre nos quedara Paris</div>
+                        <div class="post-date">02/02</div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fHw%3D"
+                            alt="Paris">
+
+                    </div>
+                    <div class="post-description">
+                        OLALA PARII
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-title">Mexico</div>
+                        <div class="post-date">03/03</div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1509130446053-899ae7358ce6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzF8fHxlbnwwfHx8fHw%3D"
+                            alt="Mexico">
+                    </div>
+                    <div class="post-description">
+                        Viva Mexico ********!!!!
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-title">Te Vigilo...</div>
+                        <div class="post-date">04/04</div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1611787640592-ebf78080d96e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVsaWN1bGFzfGVufDB8fDB8fHww"
+                            alt="Miedo">
+                    </div>
+                    <div class="post-description">
+                        ¿Notas Mi Presencia?
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-title">Tu vecino y amigo Spider-man</div>
+                        <div class="post-date">05/05</div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1521714161819-15534968fc5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHNwaWRlcm1hbnxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Spiderman">
+                    </div>
+                    <div class="post-description">
+                        Un gran poder convella una gran responsabilidad
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <!--aqui esta el contenido de la segunda pestaña-->
+
+
+            <div class="pictures mt-5"><!--aqui van las fotos en cuadricula-->
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-4 p-1 ">
+                            <img src="https://images.unsplash.com/photo-1724893973738-a80d90811389?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fHw%3D"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://plus.unsplash.com/premium_photo-1723672905407-101b8b3587aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fHw%3D"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://images.unsplash.com/photo-1724123301969-22859c2a3823?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjB8fHxlbnwwfHx8fHw%3D"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://images.unsplash.com/photo-1584468357510-6a026608e40b?w=310&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://images.unsplash.com/26/city-scape.jpg?w=310&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://plus.unsplash.com/premium_photo-1697730064923-dd664fc81d19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFycXVlJTIwY2VudHJhbHxlbnwwfHwwfHx8MA%3D%3D"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://images.unsplash.com/photo-1589050820342-d666e6116a45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://images.unsplash.com/photo-1608135383810-3a615f1ad2ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://images.unsplash.com/photo-1588974328642-c4a1857fee9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://plus.unsplash.com/premium_photo-1682960971720-1beb427d524e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBhcnF1ZSUyMGNlbnRyYWx8ZW58MHx8MHx8fDA%3D"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://images.unsplash.com/photo-1721754630074-0b255a688a75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" width="420" height="270">
+                        </div>
+                        <div class="col-4  p-1 ">
+                            <img src="https://images.unsplash.com/photo-1721763604802-21cc60882810?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D"
+                                alt="" width="420" height="270">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

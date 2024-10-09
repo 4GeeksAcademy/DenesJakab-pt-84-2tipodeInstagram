@@ -1,0 +1,53 @@
+body {
+    margin: 1px;
+    padding: 1px;
+    
+   
+}
+
+.barra-superior{
+    background-color: rgb(241, 223, 223);
+    height: 60px;
+   
+}
+
+.Instagram{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+ .icono-instagram{
+    font-size: 50px;
+ }
+
+.post {
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-title {
+    font-weight: bold;
+}
+
+.post-date {
+    font-weight: bold;
+}
+
+.post-image img {
+    width: 100vh;
+}
+
+.publicaciones {
+    max-height: 740px;
+    max-width: 740px;
+    margin-top: 100px;
+}
